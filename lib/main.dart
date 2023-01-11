@@ -98,9 +98,13 @@ class _MyHomePageState extends State<MyHomePage> {
             const Text(
               'You have pushed the button this many times:',
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+            Container(
+              padding: const EdgeInsets.all(5),
+              decoration: BoxDecoration(border: Border.all(color: Colors.red, width: 1)),
+              child: Text(
+                '$_counter',
+                style: Theme.of(context).textTheme.headline4,
+              ),
             ),
           ],
         ),
